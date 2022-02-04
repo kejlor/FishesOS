@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct GalleryModel: Codable, Identifiable {
-    let src: String?
-    let title: String?
-    var id: String? {
+struct IllustrationModel: Codable, Identifiable {
+    let src: String
+    let alt: String
+    var id: String {
         return UUID().uuidString
     }
 }
