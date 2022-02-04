@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9052BCD27ADA0740070BE33 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9052BCC27ADA0740070BE33 /* SearchBarView.swift */; };
 		E92AF25827AD584100F18FBA /* FishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92AF25727AD584100F18FBA /* FishDetailView.swift */; };
 		E999E3B227AC67F9002B9367 /* FishesOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E3B127AC67F9002B9367 /* FishesOSApp.swift */; };
 		E999E3B427AC67F9002B9367 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E3B327AC67F9002B9367 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9052BCC27ADA0740070BE33 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		E92AF25727AD584100F18FBA /* FishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailView.swift; sourceTree = "<group>"; };
 		E999E3AE27AC67F9002B9367 /* FishesOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishesOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E999E3B127AC67F9002B9367 /* FishesOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesOSApp.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9052BCB27ADA0630070BE33 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E9052BCC27ADA0740070BE33 /* SearchBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E92AF25527AD57E900F18FBA /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		E999E3C227AC689B002B9367 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E9052BCB27ADA0630070BE33 /* Components */,
 				E92AF25527AD57E900F18FBA /* Detail */,
 				E999E3CD27AC6D58002B9367 /* Home */,
 			);
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9052BCD27ADA0740070BE33 /* SearchBarView.swift in Sources */,
 				E999E3D327AC6D86002B9367 /* HomeView.swift in Sources */,
 				E999E3C627AC690F002B9367 /* Fish.swift in Sources */,
 				E999E3B427AC67F9002B9367 /* ContentView.swift in Sources */,
