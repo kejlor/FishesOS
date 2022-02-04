@@ -9,8 +9,7 @@ import Foundation
 import Combine
 
 class FishesDataService: ObservableObject {
-    
-    @Published var allFishes: [FishModel] = []
+    @Published var allFishes: [Fish] = []
     
     var fishesSubscription: AnyCancellable?
     
@@ -23,7 +22,7 @@ class FishesDataService: ObservableObject {
         guard let url = URL(string: "https://www.fishwatch.gov/api/species") else { return }
         
         fishesSubscription = NetworkingManager.download(url: url)
-            .decode(type: [FishModel].self, decoder: JSONDecoder())
+            .decode(type: [Fish].self, decoder: JSONDecoder())
             .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnedFishes) in
                 self?.allFishes = returnedFishes
                 self?.fishesSubscription?.cancel()

@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct FishesOSApp: App {
-    
     @StateObject private var vm = HomeViewModel()
     
     var body: some Scene {

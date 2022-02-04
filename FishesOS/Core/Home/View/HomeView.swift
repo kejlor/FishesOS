@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-struct HomeView: View {
-    
+struct HomeView: View {    
     @EnvironmentObject private var vm: HomeViewModel
     @State private var showFishDetail = false
-    @State private var selectedFish: FishModel? = nil
+    @State private var selectedFish: Fish? = nil
     
     var body: some View {
         VStack {
@@ -50,7 +49,7 @@ extension HomeView {
         .listStyle(PlainListStyle())
     }
     
-    private func segue(fish: FishModel) {
+    private func segue(fish: Fish) {
         selectedFish = fish
         showFishDetail.toggle()
     }

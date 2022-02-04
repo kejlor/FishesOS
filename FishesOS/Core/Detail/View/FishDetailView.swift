@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct FishDetailView: View {
-    
-    let fish: FishModel?
+    let fish: Fish?
     
     var body: some View {
         VStack(alignment: .leading) {

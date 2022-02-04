@@ -10,8 +10,7 @@ import Combine
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
-    
-    @Published var allFishes: [FishModel] = []
+    @Published var allFishes: [Fish] = []
     
     private var fishesDataService = FishesDataService()
     private var anyCancellables = Set<AnyCancellable>()

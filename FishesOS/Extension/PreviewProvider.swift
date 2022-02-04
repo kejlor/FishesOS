@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 extension PreviewProvider {
-    
     static var dev: DeveloperPreview {
         return DeveloperPreview.instance
     }
@@ -21,5 +20,5 @@ class DeveloperPreview {
     
     let homeVM = HomeViewModel()
     
-    let fish = FishModel(speciesName: "White Hake", population: "Significantly below target population level. A rebuilding plan is in place.", calories: "90", cholesterol: "67 mg", protein: "18.31 g", illustrationPhoto: IllustrationModel(src: "https://www.fishwatch.gov/sites/default/files/Hake_White_NB_W_0.png", alt: "Illustration of white hake. Credit: Jack Hornady."))
+    let fish = Fish(speciesName: "White Hake", population: "Significantly below target population level. A rebuilding plan is in place.", calories: "90", cholesterol: "67 mg", protein: "18.31 g", illustrationPhoto: Illustration(src: "https://www.fishwatch.gov/sites/default/files/Hake_White_NB_W_0.png", alt: "Illustration of white hake. Credit: Jack Hornady."))
 }

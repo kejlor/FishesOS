@@ -98,13 +98,13 @@ import Foundation
  }
  */
 
-struct FishModel: Codable, Identifiable {
+struct Fish: Codable, Identifiable {
     let speciesName: String
     let population: String?
     let calories: String?
     let cholesterol: String?
     let protein: String?
-    let illustrationPhoto: IllustrationModel
+    let illustrationPhoto: Illustration
     var id: String {
         return UUID().uuidString
     }
@@ -116,5 +116,13 @@ struct FishModel: Codable, Identifiable {
         case cholesterol = "Cholesterol"
         case protein = "Protein"
         case illustrationPhoto = "Species Illustration Photo"
+    }
+}
+
+struct Illustration: Codable, Identifiable {
+    let src: String
+    let alt: String
+    var id: String {
+        return UUID().uuidString
     }
 }
