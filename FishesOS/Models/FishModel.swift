@@ -104,7 +104,7 @@ struct FishModel: Codable, Identifiable {
     let calories: String?
     let cholesterol: String?
     let protein: String?
-    //    let imageGallery: [ImageGallery]?
+    let illustrationPhoto: IllustrationModel
     var id: String {
         return UUID().uuidString
     }
@@ -115,10 +115,6 @@ struct FishModel: Codable, Identifiable {
         case calories = "Calories"
         case cholesterol = "Cholesterol"
         case protein = "Protein"
-        //        case imageGallery = "Image Gallery"
+        case illustrationPhoto = "Species Illustration Photo"
     }
 }
-
-//struct ImageGallery: Codable {
-//    let images: [GalleryModel]?
-//}
