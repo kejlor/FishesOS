@@ -32,9 +32,7 @@ struct FishDetailView: View {
                 Text("Protein: " + (fish?.protein ?? "no data"))
                 Text("Cholesterol: " + (fish?.cholesterol ?? "no data"))
                 Text("Population:")
-                LazyVStack {
-                    Text(fish?.population ?? "no data")
-                }
+                Text(fish?.population ?? "no data")
             }
             .padding(.bottom, 4)
             .font(.body)
