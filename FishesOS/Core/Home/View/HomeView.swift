@@ -45,7 +45,7 @@ extension HomeView {
                         segue(fish: fish)
                     }
             }
-
+            
         }
         .listStyle(PlainListStyle())
     }

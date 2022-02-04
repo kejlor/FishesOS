@@ -17,7 +17,7 @@ class HomeViewModel: ObservableObject {
     private var anyCancellables = Set<AnyCancellable>()
     
     init() {
-       addSubscriber()
+        addSubscriber()
     }
     
     func addSubscriber() {
