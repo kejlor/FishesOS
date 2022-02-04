@@ -19,7 +19,7 @@ struct HomeView: View {
         }
         .background(
             NavigationLink(
-                destination: FishDetailView(fish: $selectedFish),
+                destination: FishDetailView(fish: selectedFish),
                 isActive: $showFishDetail,
                 label: { EmptyView() })
         )
