@@ -21,10 +21,5 @@ class DeveloperPreview {
     
     let homeVM = HomeViewModel()
     
-    //    let fish = FishModel(
-    //        speciesName: "White Hake",
-    //        imageGallery: [GalleryModel(
-    //            src: "https://www.fishwatch.gov/sites/default/files/white%20hake_Calvin%20Alexander_1.jpg",
-    //            title: "White hake in sampling basket aboard research vessel")])
-    let fish = FishModel(speciesName: "Fishy fish", population: "12", calories: "30", cholesterol: "5", protein: "15")
+    let fish = FishModel(speciesName: "White Hake", population: "Significantly below target population level. A rebuilding plan is in place.", calories: "90", cholesterol: "67 mg", protein: "18.31 g", illustrationPhoto: IllustrationModel(src: "https://www.fishwatch.gov/sites/default/files/Hake_White_NB_W_0.png", alt: "Illustration of white hake. Credit: Jack Hornady."))
 }
