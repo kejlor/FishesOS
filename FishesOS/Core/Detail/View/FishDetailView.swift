@@ -9,14 +9,17 @@ import SwiftUI
 
 struct FishDetailView: View {
     
-    @Binding var fish: FishModel?
-    @EnvironmentObject var vm: HomeViewModel
+    let fish: FishModel?
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(fish?.speciesName ?? "no data")
-                .font(.title)
             Divider()
+            AsyncImage(url: URL(string: fish?.illustrationPhoto.src ?? "empty")) { image in
+                image.resizable()
+            } placeholder: {
+                Color.red
+            }
+            .frame(width: 300, height: 128)
             Spacer()
             HStack {
                 Spacer()
@@ -30,19 +33,19 @@ struct FishDetailView: View {
                 Text("Protein: " + (fish?.protein ?? "no data"))
                 Text("Cholesterol: " + (fish?.cholesterol ?? "no data"))
                 Text("Population:")
-                LazyVStack(alignment: .leading) {
-                    Text(fish?.population ?? "no data")
-                }
+                Text(fish?.population ?? "no data")
+                
             }
             .padding(.bottom, 4)
             .font(.body)
         }
         .padding()
+        .navigationTitle(fish?.speciesName ?? "no data")
     }
 }
 
 struct FishDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FishDetailView(fish: .constant(dev.fish))
+        FishDetailView(fish: dev.fish)
     }
 }
