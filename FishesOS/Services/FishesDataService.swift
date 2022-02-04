@@ -11,7 +11,6 @@ import Combine
 class FishesDataService: ObservableObject {
     
     @Published var allFishes: [FishModel] = []
-//    @Published var allFishes: [FishModel] = []
     
     var fishesSubscription: AnyCancellable?
     
