@@ -14,6 +14,7 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
+            SearchBarView(searchText: $vm.searchText)
             allFishes
         }
         .background(
