@@ -48,12 +48,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9052BCB27ADA0630070BE33 /* Components */ = {
+		E9052BCB27ADA0630070BE33 /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				E9052BCC27ADA0740070BE33 /* SearchBarView.swift */,
 			);
-			path = Components;
+			path = Component;
 			sourceTree = "<group>";
 		};
 		E92AF25527AD57E900F18FBA /* Detail */ = {
@@ -93,9 +93,9 @@
 			children = (
 				E999E3B127AC67F9002B9367 /* FishesOSApp.swift */,
 				E999E3D427AC6F48002B9367 /* Extension */,
-				E999E3BF27AC682E002B9367 /* Utilities */,
-				E999E3C027AC6837002B9367 /* Services */,
-				E999E3C127AC683E002B9367 /* Models */,
+				E999E3BF27AC682E002B9367 /* Utility */,
+				E999E3C027AC6837002B9367 /* Service */,
+				E999E3C127AC683E002B9367 /* Model */,
 				E999E3C227AC689B002B9367 /* Core */,
 				E999E3B327AC67F9002B9367 /* ContentView.swift */,
 				E999E3B527AC67FA002B9367 /* Assets.xcassets */,
@@ -112,34 +112,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E999E3BF27AC682E002B9367 /* Utilities */ = {
+		E999E3BF27AC682E002B9367 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				E999E3C927AC6BBD002B9367 /* NetworkingManager.swift */,
 			);
-			path = Utilities;
+			path = Utility;
 			sourceTree = "<group>";
 		};
-		E999E3C027AC6837002B9367 /* Services */ = {
+		E999E3C027AC6837002B9367 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				E999E3CB27AC6C0F002B9367 /* FishesDataService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
-		E999E3C127AC683E002B9367 /* Models */ = {
+		E999E3C127AC683E002B9367 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				E999E3C527AC690F002B9367 /* Fish.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E999E3C227AC689B002B9367 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E9052BCB27ADA0630070BE33 /* Components */,
+				E9052BCB27ADA0630070BE33 /* Component */,
 				E92AF25527AD57E900F18FBA /* Detail */,
 				E999E3CD27AC6D58002B9367 /* Home */,
 			);
